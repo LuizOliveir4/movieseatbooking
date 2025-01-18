@@ -20,13 +20,13 @@ const router = createBrowserRouter([
     errorElement: <div>FEL</div>,
     children:[
       {
-        path:"/movieseatbook/", element: <Booking />,
+        path:"/movieseatbooking/", element: <Booking />,
       },
       {
-        path:"/movieseatbook/admin", element: <Admin />,
+        path:"/movieseatbooking/admin", element: <Admin />,
       },
       {
-        path:"/movieseatbook/createguest", element: <CreateGuest />,
+        path:"/movieseatbooking/createguest", element: <CreateGuest />,
       }
     ]
   }

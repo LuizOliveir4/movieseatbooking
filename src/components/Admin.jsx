@@ -1,6 +1,6 @@
 import { Link } from "react-router-dom"
 import { useState } from 'react'
-import { loadMovies } from '../data/moviesContext'
+import { loadMovies } from '../data/MoviesContext'
 
 const Admin = () => {
   const [movies, setMovies] = useState([
@@ -44,7 +44,7 @@ const Admin = () => {
           ))}
   
           </div>
-          <Link to="/movieseatbook" className="btn">Back to Booking</Link>
+          <Link to="/movieseatbooking" className="btn">Back to Booking</Link>
         </div>
       </section>
     )

@@ -4,7 +4,7 @@ const CreateGuest = () => {
     return(
         <section>
             <div className="movie-container">
-                <Link to="/movieseatbook" className="btn">Back to Booking</Link>
+                <Link to="/movieseatbooking" className="btn">Back to Booking</Link>
             </div>
         
         </section>

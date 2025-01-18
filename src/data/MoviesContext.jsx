@@ -1,0 +1,32 @@
+export async function loadMovies() {
+    const response = await fetch("https://luizoliveir4.github.io/movieseatbookingapi/movies.json");
+    const movies = await response.json();
+
+    return movies
+}
+
+export async function addMovie(movie) {
+    console.log(JSON.stringify(movie))
+    const response = await fetch('https://luizoliveir4.github.io/movieseatbookingapi/movies.json',{
+        headers: {
+            'Accept': 'application/json, text/plain',
+            'Content-Type': 'application/json;charset=UTF-8'
+        },
+        method:"POST",
+       body:JSON.stringify(movie)
+    });
+    console.log(response)
+  }  
+
+
+  export async function updatePlayer(movie) {
+    const response = await fetch('https://luizoliveir4.github.io/movieseatbookingapi/movies/'+movie.Id,{
+        headers: {
+            'Accept': 'application/json, text/plain',
+            'Content-Type': 'application/json;charset=UTF-8'
+        },
+        method:"PUT",
+       body:JSON.stringify(movie)
+    });
+    console.log(response)
+  }    

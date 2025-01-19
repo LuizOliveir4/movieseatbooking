@@ -2,6 +2,7 @@ import { Link } from "react-router-dom"
 import { useState } from 'react'
 import { MovieItem } from './MovieItem'
 import { AdminForm } from './AdminForm'
+import { Movie } from '../../data/Movie'
 import './Admin.css'
 
 const Admin = () => {
@@ -33,12 +34,8 @@ const Admin = () => {
   ])
   
   const addMovie = (title, year, price) => {
-    const newMovies = [... movies, {
-      id: Math.floor(Math.random()*10000),
-      title,
-      year,
-      price
-    }
+    const newMovie = new Movie(Math.floor(Math.random()*10000), title, year, price)
+    const newMovies = [... movies, newMovie
   ]
   setMovies(newMovies)
   }

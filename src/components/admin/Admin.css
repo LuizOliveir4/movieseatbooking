@@ -44,7 +44,6 @@
   .movies-list{
     margin-bottom: 20px;
     padding-bottom: 20px;
-    border-bottom: 1px solid #555;
   }
   
   .movie {
@@ -64,6 +63,7 @@
   
   .admin-form {
     padding-bottom: 1.5rem;
+    border-bottom: 1px solid #555;
   }
   
   input {

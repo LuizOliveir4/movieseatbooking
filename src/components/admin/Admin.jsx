@@ -56,6 +56,7 @@ const Admin = () => {
     return (
       <section>
         <div className="admin">
+          <AdminForm addMovie={addMovie} />
           <h1>Movies List</h1>
           <div className="movies-list">
   
@@ -64,7 +65,6 @@ const Admin = () => {
           ))}
   
           </div>
-          <AdminForm addMovie={addMovie} />
         </div>
         <Link to="/movieseatbooking" className="btn">Back to Booking</Link>
       </section>

@@ -1,8 +1,27 @@
 # React + Vite
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+Inlämnings uppgift till Frontend 2
 
-Currently, two official plugins are available:
+React + Vite framework erbjuder både möjligheten för att dela upp koden i flera moduler och möjligheten för att paketera ihop i dessa moduler med JavaScript-kod som returnerar html i form av Single Page Application (SPA).
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+Checklistan för Godkänd:
+1.	lägg till Javascript (REACT + VITE) så att när man klickar blir stolen Selected eller ledig (N/A) beroende på
+2.	Occupied är redan bokade av andra så dessa kan man inte kunna klicka på 
+3.	texten nedan (2 seats  for a price of ... ) ska naturligtvis uppdateras 
+4.	koden skall vara välstrukturerad och i mesta mån fixad med "EsLint" 
+5.	priset osv tar man nu från select options - men GÖR OM SÅ ATT DU HAR... 
+6.	Javascript klass Movie med namn och pris. 
+7.	Alla movies ska hämtas från JSONServer (i.e REST API) tex på hur movies kan se ut https://gist.githubusercontent.com/aspcodenet/32a21ce9d8b8ccf19108a8a02883e9bb/raw/785f9bcb1527cb01e182d3fe40ffafd6fd00dac9/movies.json
+8.	lämna in LÄNK till privat github repository (läraren skall vara inbjuden som collaborator) med din källkod 
+9.	Skapa en readme.md i ditt Github repository där du beskriver ditt projekt
+10.	Koden ska vara uppdelad i filer (moduler)
+
+Checklistan för Väl Godkänd:
+1.	alla G krav samt [OK]
+2.	använd React eller Angular eller liknande (NextJS, Vue) [OK]
+3.	lägg till en knapp "Boka" och då visas ett formulär där man får mata in namn och telefonnummer [OK]
+4.	Formuläret ska med Javascript validera korrekt och sen posta  till en JSONServer (i.e REST API)  där alla bokningar ska lagras  [OK]
+5.	Bygg en admin-del där man kan Administerera (CRUDDA) Movies. Du behöver inte ha inloggning till den sidan dock [OK]
+6.	I readme.md beskriv och motivera dessutom ingående de val du gjort gällande ramverk och bibliotek/struktur för ditt projekt  [OK]
+7.	Produktionssätt med Github Actions alt med npm install gh-pages --save-dev [OK]
+8.	och npm run deploy på Github Pages [OK]

@@ -1,8 +1,8 @@
-import Header from "./Header"
-import SelectMovie from "./SelectMovie"
-import SelectSeat from "./SelectSeat"
-import CalculateTotal from "./CalculateTotal"
-import Footer from "./Footer"
+import Header from "../hero/Header"
+import SelectMovie from "../hero/SelectMovie"
+import SelectSeat from "../hero/SelectSeat"
+import CalculateTotal from "../hero/CalculateTotal"
+import Footer from "../hero/Footer"
 
 const Booking = () => {
     return(

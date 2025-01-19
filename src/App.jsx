@@ -1,8 +1,8 @@
 import './App.css'
 import { createBrowserRouter, Outlet, RouterProvider } from 'react-router-dom'
-import Booking from './components/Booking'
-import Admin from './components/Admin'
-import CreateGuest from './components/CreateGuest'
+import Booking from './components/booking/Booking'
+import Admin from './components/admin/Admin'
+import CreateGuest from './components/booking/CreateGuest'
 
 
 function Layout(){

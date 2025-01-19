@@ -5,6 +5,7 @@ import { AdminForm } from './AdminForm'
 import { Movie } from '../../data/Movie'
 import './Admin.css'
 
+
 const Admin = () => {
   const [movies, setMovies] = useState([
     {
@@ -35,8 +36,7 @@ const Admin = () => {
   
   const addMovie = (title, year, price) => {
     const newMovie = new Movie(Math.floor(Math.random()*10000), title, year, price)
-    const newMovies = [... movies, newMovie
-  ]
+    const newMovies = [... movies, newMovie]
   setMovies(newMovies)
   }
   
@@ -45,11 +45,13 @@ const Admin = () => {
     const filteredMovies = newMovies.filter((movie) => movie.id !== id ? movie : null)
     setMovies(filteredMovies)
   }
-  
-  //const editMovie = (id) => {
-  //  const newMovies = [...movies]
-  //  newMovies.map((movie) => movie.id === id ? movie.id = id  : movie)
-  //}
+
+  const updateMovie = (id, title, year, price) => {
+    removeMovie(id)
+    const newMovie = new Movie(id, title, year, price)
+    const newMovies = [... movies, newMovie]
+    setMovies(newMovies)
+  }
   
     return (
       <section>
@@ -58,7 +60,7 @@ const Admin = () => {
           <div className="movies-list">
   
           {movies.map((movie) => (
-            <MovieItem key={movie.id} movie={movie} removeMovie={removeMovie} />
+            <MovieItem key={movie.id} movie={movie} removeMovie={removeMovie} updateMovie={updateMovie} />
           ))}
   
           </div>

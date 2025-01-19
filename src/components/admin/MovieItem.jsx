@@ -1,4 +1,5 @@
 import React from 'react'
+import EditForm from './EditForm'
 
 export const MovieItem = ({movie, removeMovie}) => {
   return (
@@ -8,7 +9,7 @@ export const MovieItem = ({movie, removeMovie}) => {
       <p className="movie-item"> $ {movie.price} </p>
     </div>
     <div>
-      <button className="edit">Edit</button>
+      <EditForm movie={movie}/>
       <button className="remove" onClick={() => removeMovie(movie.id)}>X</button>
     </div>
   </div>

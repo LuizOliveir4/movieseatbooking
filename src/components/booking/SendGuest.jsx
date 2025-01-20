@@ -27,6 +27,7 @@ const SendGuest = ({ addGuest }) => {
                         close => (
                             <div className='modal'>
                                 <h5>Tank you {name}!</h5>
+                                <h5>The amount $ PRICE is magically paid...</h5>
                                 <h5>Chech your SMS box to see your tickets.</h5>
                                 <button onClick= {() => location.reload()}> OK </button>    
                             </div>

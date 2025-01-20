@@ -1,6 +1,9 @@
 import { Link } from "react-router-dom"
 import { useState, useEffect } from 'react'
 import { loadMovies } from '../../data/MoviesContext'
+import { sendMovieToServer } from '../../data/MoviesContext'
+import { updateMovieInServer } from '../../data/MoviesContext'
+import { deleteMovieInServer } from '../../data/MoviesContext'
 import { MovieItem } from './MovieItem'
 import { AdminForm } from './AdminForm'
 import { Movie } from '../../data/Movie'
@@ -9,7 +12,7 @@ import './Admin.css'
 
 const Admin = () => {
 
-    console.log(loadMovies())
+    //console.log(loadMovies())
     const [movies, setMovies] = useState([]);
   
     useEffect(() =>{
@@ -51,19 +54,21 @@ const Admin = () => {
     const newMovie = new Movie(Math.floor(Math.random()*10000), title, year, price)
     const newMovies = [... movies, newMovie]
   setMovies(newMovies)
+  sendMovieToServer(newMovie)
   }
   
   const removeMovie = (id) => {
     const newMovies = [...movies]
+    //const MovieToDelete = newMovies.find(movie => movie.id === id)
     const filteredMovies = newMovies.filter((movie) => movie.id !== id ? movie : null)
     setMovies(filteredMovies)
+    deleteMovieInServer(id)
   }
 
   const updateMovie = (id, title, year, price) => {
-    removeMovie(id)
     const newMovie = new Movie(id, title, year, price)
-    const newMovies = [... movies, newMovie]
-    setMovies(newMovies)
+    updateMovieInServer(id, newMovie)
+    location.reload()
   }
   
     return (

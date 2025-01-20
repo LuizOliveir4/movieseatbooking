@@ -33,8 +33,7 @@ const SendGuest = ({ addGuest }) => {
                         )
                     }
             </Popup>
-
-            <button className="remove" onClick= {() => close()}> Close </button>
+            <button className="remove" onClick= {() => location.reload()}> Close </button>
         </form>
         </>
     )

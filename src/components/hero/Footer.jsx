@@ -1,9 +1,10 @@
 import { Link } from "react-router-dom"
+import BookingButton from "../booking/BookingButton"
 
 const Footer = () => {
     return(
         <footer>
-            <Link to="/movieseatbooking/createguest" className="btn btn-primary">Book</Link>
+            <BookingButton/>
         </footer>
     )
   }

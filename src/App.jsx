@@ -2,8 +2,6 @@ import './App.css'
 import { createBrowserRouter, Outlet, RouterProvider } from 'react-router-dom'
 import Booking from './components/booking/Booking'
 import Admin from './components/admin/Admin'
-import CreateGuest from './components/booking/CreateGuest'
-
 
 function Layout(){
   return(
@@ -24,9 +22,6 @@ const router = createBrowserRouter([
       },
       {
         path:"/movieseatbooking/admin", element: <Admin />,
-      },
-      {
-        path:"/movieseatbooking/createguest", element: <CreateGuest />,
       }
     ]
   }

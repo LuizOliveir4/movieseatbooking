@@ -14,6 +14,11 @@
     color: var(--color-bg);
     margin-bottom: 10px;
   }
+
+  h5 {
+    color: var(--color-bg);
+    margin-bottom: 10px;
+  }
   
   .movie-item {
     color: var(--color-bg);

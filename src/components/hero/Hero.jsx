@@ -1,14 +1,14 @@
 import Header from "../hero/Header"
-import SelectMovie from "../hero/SelectMovie"
+import ShowCase from "./ShowCase"
 import SelectSeat from "../hero/SelectSeat"
 import CalculateTotal from "../hero/CalculateTotal"
 import Footer from "../hero/Footer"
 
-const Booking = () => {
+const Hero = () => {
     return(
         <>
             <Header/>
-            <SelectMovie/>
+            <ShowCase/>
             <SelectSeat/>
             <CalculateTotal/>
             <Footer/>
@@ -16,4 +16,4 @@ const Booking = () => {
     )
   }
   
-  export default Booking
+  export default Hero

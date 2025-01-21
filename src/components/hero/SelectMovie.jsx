@@ -1,26 +1,35 @@
-import { ShowMovies } from "./ShowMovies"
+import React from 'react'
+import { loadMovies } from '../../data/MoviesContext'
+import { ShowMovieOption } from './ShowMovieOption'
+import { useState, useEffect } from 'react'
 
-const SelectMovie = () => {
-    return(
-      <section>
-      <ShowMovies />
-      <ul className="showcase">
-      <li>
-        <div className="seat"></div>
-        <small>N/A</small>
-      </li>
-      <li>
-        <div className="seat selected"></div>
-        <small>Selected</small>
-      </li>
-      <li>
-        <div className="seat occupied"></div>
-        <small>Occupied</small>
-      </li>
-      </ul>
+export const SelectMovie = ( ) => {
 
-      </section>
-    )
+  const [movies, setMovies] = useState([])
+
+  useEffect(() =>{
+    const fetchData = async()=>{
+      const result = await loadMovies()
+      setMovies(result)
+    }
+    fetchData()
+  }, [])
+
+  const hadleChange = (e) => {
+    let price = {price: e.target.value}
+    console.log(price)
+    return price
+    //this.setPrice({ price: e.target.value })
   }
-  
-  export default SelectMovie
+
+  return (
+        <div className="movie-container">
+        <label htmlFor="movie">Pick a movie:</label>
+            <select name="movie" id="movie" onChange={hadleChange}>
+                {movies.map((movie) => (
+                    <ShowMovieOption key={movie.id} movie={movie} />
+                ))}
+            </select>
+        </div>
+  )
+}

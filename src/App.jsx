@@ -1,6 +1,6 @@
 import './App.css'
 import { createBrowserRouter, Outlet, RouterProvider } from 'react-router-dom'
-import Booking from './components/booking/Booking'
+import Hero from './components/hero/Hero'
 import Admin from './components/admin/Admin'
 
 function Layout(){
@@ -18,7 +18,7 @@ const router = createBrowserRouter([
     errorElement: <div>FEL</div>,
     children:[
       {
-        path:"/movieseatbooking/", element: <Booking />,
+        path:"/movieseatbooking/", element: <Hero />,
       },
       {
         path:"/movieseatbooking/admin", element: <Admin />,

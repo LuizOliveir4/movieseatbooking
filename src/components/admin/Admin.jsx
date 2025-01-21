@@ -12,7 +12,6 @@ import './Admin.css'
 
 const Admin = () => {
 
-    //console.log(loadMovies())
     const [movies, setMovies] = useState([]);
   
     useEffect(() =>{
@@ -32,7 +31,6 @@ const Admin = () => {
   
   const removeMovie = (id) => {
     const newMovies = [...movies]
-    //const MovieToDelete = newMovies.find(movie => movie.id === id)
     const filteredMovies = newMovies.filter((movie) => movie.id !== id ? movie : null)
     setMovies(filteredMovies)
     deleteMovieInServer(id)

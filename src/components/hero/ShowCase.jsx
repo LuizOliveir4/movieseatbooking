@@ -1,9 +1,7 @@
-import { SelectMovie } from "./SelectMovie"
-
 const ShowCase = () => {
     return(
       <section>
-      <SelectMovie />
+      
       <ul className="showcase">
       <li>
         <div className="seat"></div>

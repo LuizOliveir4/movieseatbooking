@@ -1,4 +1,6 @@
-const SelectSeat = () => {
+import ToggleSeatButton from "./ToggleSeatButton"
+
+const SelectSeat = ( {count, subtract} ) => {
     return(
         <section>
             <div className="container">
@@ -6,64 +8,64 @@ const SelectSeat = () => {
                 <div className="screen"></div>
 
                 <div className="row">
-                    <div className="seat"></div>
-                    <div className="seat"></div>
-                    <div className="seat"></div>
-                    <div className="seat"></div>
-                    <div className="seat"></div>
-                    <div className="seat"></div>
-                    <div className="seat"></div>
-                    <div className="seat"></div>
+                    <ToggleSeatButton count={count} subtract={subtract}/>
+                    <ToggleSeatButton count={count} subtract={subtract}/>
+                    <ToggleSeatButton count={count} subtract={subtract}/>
+                    <ToggleSeatButton count={count} subtract={subtract}/>
+                    <ToggleSeatButton count={count} subtract={subtract}/>
+                    <ToggleSeatButton count={count} subtract={subtract}/>
+                    <ToggleSeatButton count={count} subtract={subtract}/>
+                    <ToggleSeatButton count={count} subtract={subtract}/>
                 </div>
                 <div className="row">
-                    <div className="seat"></div>
-                    <div className="seat"></div>
-                    <div className="seat"></div>
+                    <ToggleSeatButton count={count} subtract={subtract}/>
+                    <ToggleSeatButton count={count} subtract={subtract}/>
+                    <ToggleSeatButton count={count} subtract={subtract}/>
                     <div className="seat occupied"></div>
                     <div className="seat occupied"></div>
-                    <div className="seat"></div>
-                    <div className="seat"></div>
-                    <div className="seat"></div>
+                    <ToggleSeatButton count={count} subtract={subtract}/>
+                    <ToggleSeatButton count={count} subtract={subtract}/>
+                    <ToggleSeatButton count={count} subtract={subtract}/>
                 </div>
                 <div className="row">
-                    <div className="seat"></div>
-                    <div className="seat"></div>
-                    <div className="seat"></div>
-                    <div className="seat"></div>
-                    <div className="seat"></div>
-                    <div className="seat"></div>
+                    <ToggleSeatButton count={count} subtract={subtract}/>
+                    <ToggleSeatButton count={count} subtract={subtract}/>
+                    <ToggleSeatButton count={count} subtract={subtract}/>
+                    <ToggleSeatButton count={count} subtract={subtract}/>
+                    <ToggleSeatButton count={count} subtract={subtract}/>
+                    <ToggleSeatButton count={count} subtract={subtract}/>
                     <div className="seat occupied"></div>
                     <div className="seat occupied"></div>
                 </div>
                 <div className="row">
-                    <div className="seat"></div>
-                    <div className="seat"></div>
-                    <div className="seat"></div>
-                    <div className="seat"></div>
-                    <div className="seat"></div>
-                    <div className="seat"></div>
-                    <div className="seat"></div>
-                    <div className="seat"></div>
+                <ToggleSeatButton count={count} subtract={subtract}/>
+                    <ToggleSeatButton count={count} subtract={subtract}/>
+                    <ToggleSeatButton count={count} subtract={subtract}/>
+                    <ToggleSeatButton count={count} subtract={subtract}/>
+                    <ToggleSeatButton count={count} subtract={subtract}/>
+                    <ToggleSeatButton count={count} subtract={subtract}/>
+                    <ToggleSeatButton count={count} subtract={subtract}/>
+                    <ToggleSeatButton count={count} subtract={subtract}/>
                 </div>
                 <div className="row">
-                    <div className="seat"></div>
-                    <div className="seat"></div>
-                    <div className="seat"></div>
+                    <ToggleSeatButton count={count} subtract={subtract}/>
+                    <ToggleSeatButton count={count} subtract={subtract}/>
+                    <ToggleSeatButton count={count} subtract={subtract}/>
                     <div className="seat occupied"></div>
                     <div className="seat occupied"></div>
-                    <div className="seat"></div>
-                    <div className="seat"></div>
-                    <div className="seat"></div>
+                    <ToggleSeatButton count={count} subtract={subtract}/>
+                    <ToggleSeatButton count={count} subtract={subtract}/>
+                    <ToggleSeatButton count={count} subtract={subtract}/>
                 </div>
                 <div className="row">
-                    <div className="seat"></div>
-                    <div className="seat"></div>
-                    <div className="seat"></div>
-                    <div className="seat"></div>
+                    <ToggleSeatButton count={count} subtract={subtract}/>
+                    <ToggleSeatButton count={count} subtract={subtract}/>
+                    <ToggleSeatButton count={count} subtract={subtract}/>
+                    <ToggleSeatButton count={count} subtract={subtract}/>
                     <div className="seat occupied"></div>
                     <div className="seat occupied"></div>
                     <div className="seat occupied"></div>
-                    <div className="seat"></div>
+                    <ToggleSeatButton count={count} subtract={subtract}/>
 
                 </div>
 

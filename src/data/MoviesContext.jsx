@@ -1,5 +1,5 @@
-const url = "http://localhost:3000/movies/"
-//const url = "https://luizoliveir4.github.io/movieseatbookingapi/movies.json?id=123"
+//const url = "http://localhost:3000/movies/"
+const url = "https://luizoliveir4.github.io/movieseatbookingapi/movies.json?id=123"
 
 export async function loadMovies() {
     const response = await fetch(url);

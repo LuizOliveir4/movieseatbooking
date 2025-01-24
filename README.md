@@ -20,8 +20,22 @@ Checklistan för Väl Godkänd:
 1.	alla G krav samt [OK]
 2.	använd React eller Angular eller liknande (NextJS, Vue) [OK]
 3.	lägg till en knapp "Boka" och då visas ett formulär där man får mata in namn och telefonnummer [OK]
-4.	Formuläret ska med Javascript validera korrekt och sen posta  till en JSONServer (i.e REST API)  där alla bokningar ska lagras  [OK]
+4.	Formuläret ska med Javascript validera korrekt och sen posta  till en JSONServer (i.e REST API)  där alla bokningar ska lagras  [OK-ish]
 5.	Bygg en admin-del där man kan Administerera (CRUDDA) Movies. Du behöver inte ha inloggning till den sidan dock [OK]
 6.	I readme.md beskriv och motivera dessutom ingående de val du gjort gällande ramverk och bibliotek/struktur för ditt projekt  [OK]
 7.	Produktionssätt med Github Actions alt med npm install gh-pages --save-dev [OK]
 8.	och npm run deploy på Github Pages [OK]
+
+OBS.:
+Svårigheter med installationen av EsLing (airbnb) som fungerar med Vite (deprecated).
+Svårigheter med tillämpningen av Formik i detta projekt.
+Svårigheter med uppdateringar av variabler vid beräkningar.
+
+Databasen hämtas från:
+https://github.com/LuizOliveir4/movieseatbookingapi/blob/main/db.json
+
+och körs localt med kommandot:
+npx json-server db.json
+
+Projektet är deployad:
+https://luizoliveir4.github.io/movieseatbooking

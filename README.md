@@ -28,7 +28,7 @@ Checklistan för Väl Godkänd:
 
 OBS.:
 Svårigheter med installationen av EsLing (airbnb) som fungerar med Vite (deprecated).
-Svårigheter med tillämpningen av Formik i detta projekt.
+Svårigheter med tillämpningen av Formik i detta projekt [FIXAT OCH DEMONSTRERAS I AdmingForm + ValidateAdminForm].
 Svårigheter med uppdateringar av variabler vid beräkningar.
 
 Databasen hämtas från:

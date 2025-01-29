@@ -168,3 +168,7 @@ p.text {
 p.text span {
   color: var(--color-primary);
 }
+
+.error {
+  color: red;
+}

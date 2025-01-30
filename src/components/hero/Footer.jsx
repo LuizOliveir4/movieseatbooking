@@ -1,10 +1,10 @@
 import { Link } from "react-router-dom"
 import BookingButton from "../booking/BookingButton"
 
-const Footer = () => {
+const Footer = ({total}) => {
     return(
         <footer>
-            <BookingButton/>
+            <BookingButton total={total}/>
         </footer>
     )
   }

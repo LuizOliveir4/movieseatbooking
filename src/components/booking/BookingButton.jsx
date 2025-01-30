@@ -8,7 +8,7 @@ import Popup from 'reactjs-popup'
 import 'reactjs-popup/dist/index.css'
 import '../admin/Admin.css'
 
-const BookingButton = () => {
+const BookingButton = ({total}) => {
 
     const [guests, setGuests] = useState([]);
   
@@ -34,7 +34,7 @@ const BookingButton = () => {
                         close => (
                             <div className='modal'>
                                 <div>
-                                    <SendGuest addGuest={addGuest}/>
+                                    <SendGuest addGuest={addGuest} total={total}/>
                                 </div>
                             </div>
                         )

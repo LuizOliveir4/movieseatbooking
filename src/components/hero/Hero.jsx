@@ -55,7 +55,7 @@ const Hero = ( ) => {
             <ShowCase/>
             <SelectSeat count={count} subtract={subtract}/>
             <ShowTotal numberOfSeats={numberOfSeats} total={total}/>
-            <Footer/>
+            <Footer total={total}/>
         </>
     )
   }

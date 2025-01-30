@@ -3,7 +3,7 @@ import { useState } from 'react'
 import Popup from 'reactjs-popup'
 import 'reactjs-popup/dist/index.css'
 
-const SendGuest = ({ addGuest }) => {
+const SendGuest = ({ addGuest, total }) => {
     
   const [name, setName] = useState("")
   const [phone, setPhone] = useState("")
@@ -27,7 +27,7 @@ const SendGuest = ({ addGuest }) => {
                         close => (
                             <div className='modal'>
                                 <h5>Tank you {name}!</h5>
-                                <h5>The amount $ PRICE is magically paid...</h5>
+                                <h5>The amount $ {total} is magically paid...</h5>
                                 <h5>Chech your SMS box to see your tickets.</h5>
                                 <button onClick= {() => location.reload()}> OK </button>    
                             </div>

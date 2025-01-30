@@ -23,9 +23,10 @@ const Hero = ( ) => {
       }, [])
     
       const hadleChange = (e) => {
-        const price = {price: e.target.value}.price
-        console.log(price)
-        setPrice(price)
+        const newPrice = {price: e.target.value}.price
+        console.log(newPrice)
+        setPrice(newPrice)
+        multiplies()
       }
 
       const count = () => {

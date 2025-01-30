@@ -5,7 +5,7 @@ const SelectMovie = ( {hadleChange, movies} ) => {
   return (
         <div className="movie-container">
         <label htmlFor="movie">Pick a movie:</label>
-            <select name="movie" id="movie" onChange={hadleChange}>
+            <select name="movie" id="movie" onChange={hadleChange} defaultValue={movies[0]}>
                 {movies.map((movie) => (
                     <ShowMovieOption key={movie.id} movie={movie} />
                 ))}
